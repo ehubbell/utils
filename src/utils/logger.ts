@@ -37,4 +37,3 @@ export { logger };
 
 // Docs:
 // https://developer.mozilla.team/en-US/docs/Web/API/Console
-// https://betterstack.com/docs/logs/javascript/install/
