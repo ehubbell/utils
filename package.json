@@ -1,6 +1,6 @@
 {
   "name": "@ehubbell/utils",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "A collection of utilities used for various projects.",
   "author": "Eric Hubbell<eric@erichubbell.com>",
   "license": "ISC",
@@ -89,7 +89,7 @@
       "types": "./dist/index.d.ts"
     },
     "./logger": {
-      "import":"./dist/logger.mjs",
+      "import": "./dist/logger.mjs",
       "types": "./dist/index.d.ts"
     },
     "./math": {
