@@ -70,38 +70,47 @@
   "exports": {
     ".": {
       "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs",
       "types": "./dist/index.d.ts"
     },
     "./arrays": {
       "import": "./dist/arrays.mjs",
+      "require": "./dist/arrays.cjs",
       "types": "./dist/index.d.ts"
     },
     "./dates": {
       "import": "./dist/dates.mjs",
+      "require": "./dist/dates.cjs",
       "types": "./dist/index.d.ts"
     },
     "./errors": {
       "import": "./dist/errors.mjs",
+      "require": "./dist/errors.cjs",
       "types": "./dist/index.d.ts"
     },
     "./helpers": {
       "import": "./dist/helpers.mjs",
+      "require": "./dist/helpers.cjs",
       "types": "./dist/index.d.ts"
     },
     "./logger": {
       "import": "./dist/logger.mjs",
+      "require": "./dist/logger.cjs",
       "types": "./dist/index.d.ts"
     },
     "./math": {
       "import": "./dist/math.mjs",
+      "require": "./dist/math.cjs",
       "types": "./dist/index.d.ts"
     },
     "./regex": {
       "import": "./dist/regex.mjs",
+      "require": "./dist/regex.cjs",
       "types": "./dist/index.d.ts"
     },
     "./transforms": {
       "import": "./dist/transforms.mjs",
+      "require": "./dist/transforms.cjs",
       "types": "./dist/index.d.ts"
     }
   }
