@@ -1,5 +1,6 @@
 export * from 'utils/arrays';
 export * from 'utils/dates';
+export * from 'utils/env';
 export * from 'utils/errors';
 export * from 'utils/helpers';
 export * from 'utils/logger';

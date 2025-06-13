@@ -1,8 +1,6 @@
 import pluralize from 'pluralize';
 import uniqid from 'uniqid';
 
-export const env = process.env.NEXT_PUBLIC_NODE_ENV || process.env.NODE_ENV;
-
 export const sleep = ms => {
 	return new Promise(resolve => setTimeout(resolve, ms));
 };

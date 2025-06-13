@@ -28,6 +28,7 @@ export default defineConfig(({ mode }) => {
 					path.resolve(__dirname, 'src/index.ts'),
 					path.resolve(__dirname, 'src/utils/arrays.ts'),
 					path.resolve(__dirname, 'src/utils/dates.ts'),
+					path.resolve(__dirname, 'src/utils/env.ts'),
 					path.resolve(__dirname, 'src/utils/errors.ts'),
 					path.resolve(__dirname, 'src/utils/helpers.ts'),
 					path.resolve(__dirname, 'src/utils/logger.ts'),
