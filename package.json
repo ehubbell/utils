@@ -83,11 +83,6 @@
       "require": "./dist/dates.cjs",
       "types": "./dist/index.d.ts"
     },
-    "./env": {
-      "import": "./dist/env.mjs",
-      "require": "./dist/env.cjs",
-      "types": "./dist/index.d.ts"
-    },
     "./errors": {
       "import": "./dist/errors.mjs",
       "require": "./dist/errors.cjs",
@@ -116,6 +111,11 @@
     "./transforms": {
       "import": "./dist/transforms.mjs",
       "require": "./dist/transforms.cjs",
+      "types": "./dist/index.d.ts"
+    },
+    "./variables": {
+      "import": "./dist/variables.mjs",
+      "require": "./dist/variables.cjs",
       "types": "./dist/index.d.ts"
     }
   }
