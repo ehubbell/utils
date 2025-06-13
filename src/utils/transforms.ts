@@ -1,3 +1,6 @@
+import Accounting from 'accounting';
+import { abbreviateNumber } from 'js-abbreviation-number';
+
 export const camelToUnderscore = (data = '') => {
 	return data.replace(/([A-Z])/g, '_$1').toLowerCase();
 };
@@ -61,6 +64,18 @@ export const toPhone = (value = '') => {
 		return value.replace(/(\d{3})(\d{3})(\d{4})/, '$1-$2-$3');
 	}
 	return '--';
+};
+
+export const toCurrency = (value, precision = 2) => {
+	return Accounting.formatMoney(value, '$', precision);
+};
+
+export const toNumber = (value, decimal = 0) => {
+	return Accounting.formatNumber(value, decimal);
+};
+
+export const toShortNumber = (value = 0, decimal = 1) => {
+	return abbreviateNumber(value, decimal);
 };
 
 export const toPercent = (value = 0) => {

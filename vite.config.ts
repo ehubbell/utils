@@ -37,7 +37,7 @@ export default defineConfig(({ mode }) => {
 				],
 				name: 'Utils',
 				formats: ['es', 'cjs'],
-				fileName: (format, entryName) => `${entryName}.${format}.js`,
+				fileName: (format, entryName) => (format === 'es' ? `${entryName}.mjs` : `${entryName}.cjs`),
 			},
 			rollupOptions: {
 				external: ['uniqid'],

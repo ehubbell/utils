@@ -4,7 +4,8 @@
   "description": "A collection of utilities used for various projects.",
   "author": "Eric Hubbell<eric@erichubbell.com>",
   "license": "ISC",
-  "main": "dist/index.cjs.js",
+  "type": "module",
+  "main": "dist/index.mjs",
   "module": "dist/index.es.js",
   "types": "dist/index.d.ts",
   "repository": {
@@ -40,6 +41,7 @@
   "dependencies": {
     "accounting": "^0.4.1",
     "dayjs": "^1.11.13",
+    "js-abbreviation-number": "^1.4.0",
     "pluralize": "^8.0.0",
     "uniqid": "^5.4.0"
   },
@@ -66,14 +68,41 @@
     "vite-plugin-dts": "^4.5.0"
   },
   "exports": {
-    ".": "./dist/index.cjs.js",
-    "./arrays": "./dist/arrays.cjs.js",
-    "./dates": "./dist/dates.cjs.js",
-    "./errors": "./dist/errors.cjs.js",
-    "./helpers": "./dist/helpers.cjs.js",
-    "./logger": "./dist/logger.cjs.js",
-    "./math": "./dist/math.cjs.js",
-    "./regex": "./dist/regex.cjs.js",
-    "./transforms": "./dist/transforms.cjs.js"
+    ".": {
+      "import": "./dist/index.mjs",
+      "types": "./dist/index.d.ts"
+    },
+    "./arrays": {
+      "import": "./dist/arrays.mjs",
+      "types": "./dist/index.d.ts"
+    },
+    "./dates": {
+      "import": "./dist/dates.mjs",
+      "types": "./dist/index.d.ts"
+    },
+    "./errors": {
+      "import": "./dist/errors.mjs",
+      "types": "./dist/index.d.ts"
+    },
+    "./helpers": {
+      "import": "./dist/helpers.mjs",
+      "types": "./dist/index.d.ts"
+    },
+    "./logger": {
+      "import":"./dist/logger.mjs",
+      "types": "./dist/index.d.ts"
+    },
+    "./math": {
+      "import": "./dist/math.mjs",
+      "types": "./dist/index.d.ts"
+    },
+    "./regex": {
+      "import": "./dist/regex.mjs",
+      "types": "./dist/index.d.ts"
+    },
+    "./transforms": {
+      "import": "./dist/transforms.mjs",
+      "types": "./dist/index.d.ts"
+    }
   }
 }
