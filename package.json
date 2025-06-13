@@ -24,7 +24,7 @@
   "scripts": {
     "dev": "vite build --mode development --watch --minify false --sourcemap",
     "start": "vite build --mode development --minify false",
-    "build": "vite build --mode production --minify true",
+    "build": "vite build --mode production --minify true && npm run build:ts",
     "build:ts": "dts-bundle-generator --config dts.config.ts",
     "lint": "eslint src",
     "lint:fix": "eslint src --fix",
@@ -64,5 +64,16 @@
     "typescript": "^4.9.4",
     "vite": "^4.0.0",
     "vite-plugin-dts": "^4.5.0"
+  },
+  "exports": {
+    ".": "./dist/index.cjs.js",
+    "./arrays": "./dist/arrays.cjs.js",
+    "./dates": "./dist/dates.cjs.js",
+    "./errors": "./dist/errors.cjs.js",
+    "./helpers": "./dist/helpers.cjs.js",
+    "./logger": "./dist/logger.cjs.js",
+    "./math": "./dist/math.cjs.js",
+    "./regex": "./dist/regex.cjs.js",
+    "./transforms": "./dist/transforms.cjs.js"
   }
 }

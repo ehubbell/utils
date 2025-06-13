@@ -22,11 +22,22 @@ export default defineConfig(({ mode }) => {
 	return {
 		base: './',
 		build: {
+			sourcemap: true,
 			lib: {
-				entry: path.resolve(__dirname, 'src/index.ts'),
+				entry: [
+					path.resolve(__dirname, 'src/index.ts'),
+					path.resolve(__dirname, 'src/utils/arrays.ts'),
+					path.resolve(__dirname, 'src/utils/dates.ts'),
+					path.resolve(__dirname, 'src/utils/errors.ts'),
+					path.resolve(__dirname, 'src/utils/helpers.ts'),
+					path.resolve(__dirname, 'src/utils/logger.ts'),
+					path.resolve(__dirname, 'src/utils/math.ts'),
+					path.resolve(__dirname, 'src/utils/regex.ts'),
+					path.resolve(__dirname, 'src/utils/transforms.ts'),
+				],
 				name: 'Utils',
 				formats: ['es', 'cjs'],
-				fileName: format => `index.${format}.js`,
+				fileName: (format, entryName) => `${entryName}.${format}.js`,
 			},
 			rollupOptions: {
 				external: ['uniqid'],
